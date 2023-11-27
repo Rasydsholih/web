@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countact | im</title>
+    <link rel="stylesheet" href="countact.css">
+    <script src="https://kit.fontawesome.com/cc240e617d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kenia&family=Lora&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check" style="display: 1px solid;">
+        <div class="sidebar">
+        <h1><a href="">Onsyd</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="countact.html">Contact</a></li>
+            </ul>
+        </div>
+            <!--label-->
+            <label for="check" class="mobile-menu">
+            <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i>
+            </label>
+            <!--bagian header-->
+            <div class="atas">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="countact.html">Contact</a></li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <div class="icon">
+            <div class="logo">
+                
+                <a href="https://www.instagram.com/onesyd01/"><i class="fa-brands fa-instagram fa-fade"></i></a>
+                <a href="https://wa.me/085888310701"><i class="fa-brands fa-whatsapp fa-fade" ></i></a>
+                <a href=""><i class="fa-brands fa-tiktok fa-fade"></i></a>
+            </div>
+        </div>
+        <div class="container">
+            <form action="/form/submit" method="POST" class="for">
+              <label for="fname" class="pesan">Name</label>
+              <input type="text" id="fname" name="name" placeholder="your Name.." class="conten one">
+              <label for="lname" class="pesan">Your number</label>
+              <input type="text" id="lname" name="surname" placeholder="your Number.." class="conten one">
+              <label for="mail" class="pesan">Instagram user Name </label>
+              <input type="text" id="mail" name="e-mail" placeholder="Your Instagram.." class="conten one">
+              <label for="country" class="pesan">Country</label>
+              <label for="message" class="pesan">Message</label>
+              <textarea id="message" name="message" placeholder="Type your message.." style="height: 50px" class="conten01"></textarea>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+    </main>
+    
+</body>
+</html>

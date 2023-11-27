@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp9278577.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 906px;
+    
+}
+
+
+header {
+    height: 70px;
+    position: relative;
+    margin-top: -19px;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 15px 24px;
+}
+
+header h1 a:hover {
+    color: gold;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.atas {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(144, 17, 223);
+    border: 1px solid white;
+    color: bisque;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.atas a {
+    color: rgb(255, 255, 255);
+}
+
+.atas:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+/* #id {
+    display: none;
+} */
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    transition: .3s;
+}
+
+.sidebar ul li a {
+    color: white;
+    margin: 10px;
+}
+
+.sidebar ul li {    
+    padding: 24px;
+    transition: .3s;
+    color: aliceblue;
+}
+
+.sidebar ul li:hover {
+    background-color: gray;
+}
+
+.sidebar ul li a:hover {
+    color: gold;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+.icon {
+    color: white;
+}
+
+input[type=text], select,textarea {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-left: 9px;
+    margin-right: 9px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4cd9c6;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #6fe8d7;
+}
+
+.container {
+    width: 30%;
+    height: 500px;
+    padding: 15px;
+    margin-top: 100px;
+    margin-left: 520px;
+}
+
+.for {
+    background-image: url(https://i.pinimg.com/564x/fe/b9/c5/feb9c5f4d414595837f34a9775aeaa18.jpg);
+    background-size: cover;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border: 3px solid purple;
+    border-radius: 20px;
+}
+
+.conten {
+    background-color: transparent;
+    color: white;
+}
+
+.conten01 {
+    background-color: transparent;
+    color: white;
+}
+
+.pesan {
+    color: white;
+    
+    
+}
+
+.icon {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.logo a {
+    font-size: 50px;
+    color: white;
+}
+
+.fa-whatsapp {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+option {
+    background-color: plum;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-image: url(https://i.pinimg.com/564x/68/aa/93/68aa939de2f4f3e49457c1b627c7d175.jpg);
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    .mobile-menu {
+        display: block;
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    .atas h1 {
+        display: inline;
+    }
+
+    .atas ul {
+        display: none;
+    }
+
+    header {
+        margin: 0;
+        margin-top: -19px;
+        z-index: 3;
+    }
+
+    #chek{
+        position: absolute;
+    }
+
+    .container {
+        display: inline;  
+        
+    }
+    
+    input[type=text], select,textarea {
+        width: 80%;
+        height: 35px;
+    }
+
+    .for {
+        width: 60%;
+        height: 400px;
+        margin-left: 300px;
+        position: relative;
+        top: -40px;
+        background-image: url(https://i.pinimg.com/564x/3e/bc/e8/3ebce85bc0bfaee5127200ee16f58285.jpg);
+        background-size: cover;
+    }
+
+    .icon {
+        margin-top: 100px;
+        position: relative;
+        bottom: 60px;
+    }
+
+    .conten {
+        width: 30px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .pesan {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 948px) {
+    .container {
+        position: relative;
+        right: 224px;
+    }
+}

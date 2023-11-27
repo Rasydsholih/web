@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp9278577.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 906px;
+    
+}
+
+
+header {
+    height: 70px;
+    position: relative;
+    margin-top: -19px;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 15px 24px;
+}
+
+header h1 a:hover {
+    color: gold;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.atas {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(144, 17, 223);
+    border: 1px solid white;
+    color: bisque;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.atas a {
+    color: rgb(255, 255, 255);
+}
+
+.atas:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+/* #id {
+    display: none;
+} */
+
+input {
+    opacity: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    transition: .3s;
+}
+
+.sidebar ul li a {
+    color: white;
+    margin: 10px;
+}
+
+.sidebar ul li {    
+    padding: 24px;
+    transition: .3s;
+    color: aliceblue;
+}
+
+.sidebar ul li:hover {
+    background-color: gray;
+}
+
+.sidebar ul li a:hover {
+    color: gold;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    
+}
+
+.tentang{
+    display: none;
+}
+
+.article {
+    width: 55%;
+    height: 500px;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    border: 2px solid purple;
+    margin-left: 50px;
+}
+
+.article img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid purple;
+    margin-top: 20px;
+}
+
+article h3,p {
+    color: white;
+}
+
+article h3 {
+    position: relative;
+    text-align: center;
+    top: 10px;
+
+}
+
+article p {
+    position: relative;
+    text-align: center;
+    top: 40px;
+}
+
+.aside {
+    width: 50%;
+    height: 500px;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    border: 2px solid purple;
+    margin-left: -50px;
+    position: relative;
+    right: 55px;
+}
+
+aside h3,p {
+    color: white;
+}
+
+aside h3 {
+    position: relative;
+    top: 70px;
+}
+
+aside p {
+    font-size: 15px;
+    position: relative;
+    top: 150px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-image: url(https://i.pinimg.com/564x/68/aa/93/68aa939de2f4f3e49457c1b627c7d175.jpg);
+        background-size: cover;
+        overflow-x: hidden;
+    }
+    
+    .mobile-menu {
+        display: block;
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    .atas h1 {
+        display: inline;
+    }
+
+    .atas ul {
+        display: none;
+    }
+
+    header {
+        margin: 0;
+        margin-top: -19px;
+        z-index: 3;
+    }
+
+    #chek{
+        position: absolute;
+    }
+
+    aside p {
+        font-size: 15px;
+    }
+
+    .center {
+        display: block
+        
+    }
+
+    .tentang {
+        display: inline;
+        position: relative;
+        left: 25%;
+    }
+
+    .tentang h2 {
+        margin-top: -120px;
+        border-bottom: 10px solid purple;
+        width: 50%;
+    }
+
+    .bagian-about {
+        margin-top: 100px;
+    }
+
+
+    .article {
+        width: 60%;
+        height: 300px;
+        margin-left: 76px;
+        margin-bottom: 20px;
+
+    }
+
+    .article img {
+        width: 80px;
+        height: 80px;
+    }
+
+    article h3 {
+        font-size: 10px;
+    }
+
+    article p {
+        font-size: 10px;
+    }
+
+    .aside {
+        width: 60%;
+        height: 300px;
+        margin-left: 76px;
+        position: relative;
+        right: 0px;
+    }
+
+    .aside h3 {
+        font-size: 10px;
+        position: relative;
+        top: 70px;
+    }
+
+    .aside p {
+        font-size: 7px;
+        position: relative;
+        margin-top: -20px;
+    }
+
+
+}
+@media only screen and (max-width: 930px) {
+    .article {
+        width: 60%;
+    }
+
+    .aside {
+        width: 60%;
+    }
+}

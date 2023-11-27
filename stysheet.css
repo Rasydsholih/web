@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:  sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp9278577.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    height: 70px;
+    position: relative;
+    margin-top: -19px;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 15px 24px;
+}
+
+header h1 a:hover {
+    color: gold;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.atas {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(144, 17, 223);
+    border: 1px solid white;
+    color: bisque;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.atas a {
+    color: rgb(255, 255, 255);
+}
+
+.atas:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+/* #id {
+    display: none;
+} */
+
+input {
+    opacity: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    transition: .3s;
+}
+
+.sidebar ul li a {
+    color: white;
+    margin: 10px;
+}
+
+.sidebar ul li {    
+    padding: 24px;
+    transition: .3s;
+    color: aliceblue;
+}
+
+.sidebar ul li:hover {
+    background-color: gray;
+}
+
+.sidebar ul li a:hover {
+    color: gold;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+main {
+    display: none;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 200px;
+    
+}
+
+.aside {
+    width: 50%;
+    height: 500px;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    border: 2px solid purple;
+    margin-left: -50px;
+    position: relative;
+    right: 55px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+aside h3,p {
+    color: white;
+}
+
+aside h3 {
+    position: relative;
+    top: 70px;
+}
+
+aside p {
+    font-size: 15px;
+    position: relative;
+    top: 150px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-image: url(https://i.pinimg.com/564x/68/aa/93/68aa939de2f4f3e49457c1b627c7d175.jpg);
+        background-size: cover;
+    }
+    
+    .mobile-menu {
+        display: block;
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    .atas ul {
+        display: none;
+    }
+
+    header {
+        margin: 0;
+        margin-top: -19px;
+        z-index: 3;
+    }
+
+    #chek{
+        position: absolute;
+    }
+
+    .bagian-home .kebawah {
+        margin-top: 200px;
+        
+    }
+
+    .kebawah img {
+        position: relative;
+        justify-content: space-between;
+        left: 50px;
+    }
+
+    .kebawah .panda {
+        width: 150px;
+        height: 150px;
+    }
+
+    .kebawah .judul3, .paragraf001 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .kebawah h3 {
+        font-size: 25px;
+    }
+
+    .kebawah .paragraf001 {
+        font-size: 20px;
+    }
+
+    .bagian-home .kebawah{
+        display: block;
+    } 
+
+    main {
+        display: inline;
+    }
+
+    .border {
+        border: 5px solid black;
+        position: relative;
+        bottom: 290px;
+    }
+
+    .center {
+        position: relative;
+        margin-top: 130px;
+    }
+
+    .aside {
+        width: 70%;
+        height: 300px;
+        margin-left: -26px;
+        position: relative;
+        right: 0px;
+    }
+
+    .aside:hover {
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+        
+    }
+
+    .aside h3 {
+        font-size: 10px;
+        text-align: center;
+        position: relative;
+        top: 70px;
+    }
+
+    .aside p {
+        font-size: 7px;
+        text-align: center;
+        position: relative;
+        margin-top: -20px;
+    }
+
+    .kembali {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 100%;
+        margin-left: -70px;
+        margin-top: 400px;
+        position: relative;
+        right: 92px;
+    }
+
+    .kembali a {
+        position: relative;
+        bottom: -5px;
+    }
+
+    .melihat {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 100%;
+        position: relative;
+        bottom: 400px;
+        position: relative;
+        left: 180px;
+    }
+
+    .melihat a {
+        position: relative;
+        bottom: -5px;
+    }
+
+}
+
+
+
+
+
+

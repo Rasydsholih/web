@@ -1,0 +1,139 @@
+.bagian-home {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -68px;
+     
+
+}
+
+.bagian-home img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-right: 20px;
+    border: 2px solid white;
+}
+
+.paragraf01 p,h3 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    
+}
+
+.kebawah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10px;
+
+    
+}
+
+.bagian-about {
+    width: 100%;
+    height: 785px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 185px;
+    border-top: 10px solid black;
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+
+.bagian-about .one01, .two02 {
+    margin-top: 150px;
+}
+
+.one01 {
+    width: 40%;
+    height: 60%;
+    background-color: rgba(0,0,0,0.4);  
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(156, 63, 255);
+    text-align: center;
+    border-radius: 30px;
+    position: relative;
+    top: 60px;
+    right: 50px;
+}
+
+.one01 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid white;
+    margin-top: 30px;
+}
+
+.one01 h2{
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.one01 p{
+    color: white;
+    font-size: 15px;
+    
+}
+
+
+.two02 {
+    width: 40%;
+    height: 60%;
+    background-color: rgba(0,0,0,0.4);  
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(156, 63, 255);
+    text-align: center;
+    border-radius: 30px;
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
+
+.two02 h2, .p2 {
+    margin-top: 90px;
+}
+
+.two02 h2 {
+    color: white;
+    font-size: 17px;
+}
+
+.two02 p {
+    color: white;
+    font-size: 15px;
+}
+
+.sosmed {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.sosmed .ige, .wa, .tiktak {
+    color: white;
+}
+
+.wa {
+    
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 180px;
+    margin-top: -185px;
+    border-top: 6px solid rgb(192, 0, 230);
+}
+
