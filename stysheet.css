@@ -119,6 +119,12 @@ main {
     display: none;
 }
 
+.paragraf01 h3 {
+    color: rgb(55, 0, 255);
+    font-weight: 800;
+    -webkit-text-stroke: 0.6px white;
+}
+
 
 .center {
     display: flex;
@@ -149,12 +155,17 @@ aside h3,p {
 aside h3 {
     position: relative;
     top: 70px;
+    
 }
 
 aside p {
     font-size: 15px;
     position: relative;
     top: 150px;
+}
+
+.melihat a {
+    display: none;
 }
 
 
@@ -226,7 +237,7 @@ aside p {
     .border {
         border: 5px solid black;
         position: relative;
-        bottom: 290px;
+        bottom: 260px;
     }
 
     .center {
@@ -256,10 +267,10 @@ aside p {
     }
 
     .aside p {
-        font-size: 7px;
+        font-size: 10px;
         text-align: center;
         position: relative;
-        margin-top: -20px;
+        margin-top: -25px;
     }
 
     .kembali {
@@ -272,7 +283,7 @@ aside p {
         margin-left: -70px;
         margin-top: 400px;
         position: relative;
-        right: 92px;
+        right: 200px;
     }
 
     .kembali a {
@@ -288,17 +299,34 @@ aside p {
         border: 1px solid white;
         border-radius: 100%;
         position: relative;
-        bottom: 400px;
-        position: relative;
-        left: 180px;
+        left: 115px;
+        top: 10px;
+
     }
 
     .melihat a {
         position: relative;
         bottom: -5px;
+        display: inline;
     }
 
 }
+
+@media only screen and (max-width:365px){
+    .kembali {
+        right: 65px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width:335px){
+    .kebawah {
+        position: relative;
+        bottom: 60px;
+    }
+}
+
+
 
 
 
